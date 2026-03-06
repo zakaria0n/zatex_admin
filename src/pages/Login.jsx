@@ -37,7 +37,7 @@ const Login = () => {
 
     return (
         <div className="app-container" style={{ justifyContent: 'center', alignItems: 'center', backgroundColor: 'var(--bg-dark)' }}>
-            <div className="glass-panel animate-fade-in" style={{ width: '100%', maxWidth: '400px', borderTop: '4px solid var(--text-secondary)' }}>
+            <div className="glass-panel auth-panel animate-fade-in" style={{ borderTop: '4px solid var(--text-secondary)' }}>
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                     <img src="/logo.png" alt="ZKR Logo" style={{ height: '48px', marginBottom: '1rem', filter: 'brightness(100) grayscale(100%)' }} />
                     <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Admin Access</h2>

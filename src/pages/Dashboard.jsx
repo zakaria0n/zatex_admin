@@ -82,10 +82,10 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="app-container animate-fade-in">
+        <div className="dashboard-wrapper animate-fade-in">
             {/* Sidebar */}
-            <aside style={{ width: '250px', backgroundColor: 'var(--bg-dark)', borderRight: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column' }}>
-                <div style={{ padding: '2rem 1.5rem', borderBottom: '1px solid var(--border-color)', display: 'flex', justifyContent: 'center' }}>
+            <aside className="admin-sidebar">
+                <div className="logo-container" style={{ padding: '2rem 1.5rem', borderBottom: '1px solid var(--border-color)', display: 'flex', justifyContent: 'center' }}>
                     <img src="/src/assets/icon.png" alt="ZKR Logo" style={{ height: '36px', filter: 'brightness(100) grayscale(100%)' }} />
                 </div>
 
@@ -106,9 +106,9 @@ const Dashboard = () => {
                     </button>
                 </nav>
 
-                <div style={{ padding: '1rem', borderTop: '1px solid var(--border-color)' }}>
-                    <div style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                        <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: 'var(--bg-panel)', border: '1px solid var(--border-color)', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.875rem', fontWeight: 'bold' }}>
+                <div className="sidebar-footer" style={{ padding: '1rem', borderTop: '1px solid var(--border-color)' }}>
+                    <div className="user-info" style={{ marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <div style={{ width: '32px', height: '32px', borderRadius: '50%', backgroundColor: 'var(--bg-panel)', border: '1px solid var(--border-color)', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.875rem', fontWeight: 'bold', flexShrink: 0 }}>
                             {userProfile?.full_name?.charAt(0) || 'A'}
                         </div>
                         <div>
